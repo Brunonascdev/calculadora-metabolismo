@@ -7,45 +7,27 @@
 
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
-  <script src="components/acao.js"> </script>
   <script src="components/jquery-3.4.1.min.js"> </script>
-
+  <script src="components/acao.js"> </script>
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css"> 
 
 </head>
 <body>
   <div class="container">
-
-  <div class="jumbotron">
-    <h3> Calculadora metabolismo </h3>
+    <h3 class="titulo"> Calculadora de<br>Metabolismo </h3>
+    
+    <h5 class="sele"> Selecione seu sexo: </h5>
+    <select class="option" id="genero">
+      <option value="M"> Masculino </option>
+      <option value="F"> Feminino </option>
+    </select>
+    <p></p>
+    <button class="enviar" type="submit" onclick="location.href='taxa.html';"> Próximo </button>
+    <h5 class="cred"> Desenvolvido por <span class="bruno">Bruno Rogerio</span> e<br> <span class="julia">Julia Stefanoni</span></h3>
   </div>
-
-  <form action="" method="POST">
-    <div class="row">
-      <div class="col-md-12">
-        <label> Nível de atividade: </label>
-        <form class="form-control" id="atividade">
-          <div class="radio">
-             <label> <input type="radio" name="" value="1.2"> Sedentário (pouco ou nenhum exercício) </label>
-          </div>
-          <div class="radio">
-             <label> <input type="radio" value="1.375"> Levemente ativo (exercício 1 á 3 vezes por semana) </label>
-          </div>
-        <div class="radio">
-             <label> <input type="radio" value="1.55"> Moderamente ativo (exercício 3 á 5 vezes por semana) </label>
-        </div>
-        <div class="radio">
-             <label> <input type="radio" value="1.725"> Altamente ativo (exercício 5 á 6 vezes por semana) </label>
-        </div>
-        <div class="radio">
-             <label> <input type="radio" value="1.9"> peto (exercício pesado diariamente e até 2 vezes por dia) </label>
-        </div>
-
-      </div>
-    </div>
-  </form>
-</div>
 </body>
 </html>

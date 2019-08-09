@@ -1,2 +1,86 @@
-/**/
+body{
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.titulo{
+  text-align: center;
+   font-family: 'Courgette', cursive;
+   font-size: 48px;
+   color: white;
+  text-shadow:
+   -5px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.sele{
+  text-align: center;
+   font-family: 'Courgette', cursive;
+   font-size: 28px;
+   color: white;
+  text-shadow:
+   -3px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+
+}
+
+.option{
+  border-radius: 15px;
+  padding: 16px;
+  width: 70%;
+  font-size: 18px;
+  margin-left: 15%;
+  margin-top: -30px; 
+}
+
+.cred{
+  margin-top: 50%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.enviar{
+  width: 70%;
+  border: none;
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 60px;
+  border-radius: 15px;
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.bruno{
+  color: purple;
+}
+
+.julia{
+  color: purple;
+}
+
+.dados{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 15%;
+  padding-bottom: 5px;
+}
+
+.textos{
+  height: 40px;
+  margin-left: 15%;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  width: 70%;
+  margin-top: 5px;
+}

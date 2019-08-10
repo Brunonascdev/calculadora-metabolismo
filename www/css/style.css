@@ -20,6 +20,18 @@ body{
      1px 1px 0 #000;
 }
 
+.textoResultado{
+   text-align: center;
+   font-family: 'Courgette', cursive;
+   font-size: 34px;
+   color: white;
+  text-shadow:
+   -5px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
 .sele{
   text-align: center;
    font-family: 'Courgette', cursive;
@@ -93,4 +105,8 @@ body{
   text-align: center;
   width: 70%;
   margin-top: 5px;
+}
+
+.sapao{
+    margin-left: 30%;
 }

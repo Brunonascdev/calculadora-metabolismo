@@ -45,21 +45,27 @@
       <h5 class="sele"> informe seus dados: </h5>
     <label class="dados"> Informe sua idade: </label>
     <br>
-    <input class="textos" type="text" value="" placeholder="28" id="idade">
+    <input class="textos" type="text" value="" placeholder="28" id="idade" required maxlength="3">
     <br>
+      <p></p>
     <label class="dados"> Informe seu peso: </label>
     <br>
-    <input class="textos" type="text" value="" placeholder="72" id="peso">
+    <input class="textos" type="text" value="" placeholder="72" id="peso" required maxlength="3">
     <br>
+      <p></p>
     <label class="dados"> Informe sua altura: </label>
     <br>
-    <input class="textos" type="text" value="" placeholder="1.78" id="altura">
+    <input class="textos" type="text" value="" placeholder="1.78" id="altura" required maxlength="4">
     <p></p>
-    <button class="enviar" type="submit" onclick="location.href='result.html';" id="p3"> Próximo </button>
+    <button class="enviar" type="submit" onclick="sumirInfo()" id="p3"> Próximo </button>
     </div> <!-- FIM DA INFO -->
 
     <div class="resultado">
-      <h1 id="resultadoCalc"> teste </h1>
+      <!-- resultadoCalc -->
+      <h5 class="sele"> Sua taxa metabólica<br>basal é: </h5>
+      <h3 class="textoResultado" id="resultadoCalc"></h5>
+      <h5 class="sele"> Pratique exercícios!</h5>
+      <img src="sapo.gif" alt="SAPO DE BIKE KKKKKK" height="190" width="160" class="sapao">
     </div>
 
   </div>

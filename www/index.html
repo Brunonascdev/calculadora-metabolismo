@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
-  <script src="components/jquery-3.4.1.min.js"> </script>
-  <script src="components/acao.js"> </script>
+
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
  
@@ -19,15 +16,56 @@
 <body>
   <div class="container">
     <h3 class="titulo"> Calculadora de<br>Metabolismo </h3>
-    
+  
+ 
+  <div class="genero">  <!-- DIV DO GENERO -->
     <h5 class="sele"> Selecione seu sexo: </h5>
-    <select class="option" id="genero">
+    <select class="option" id="opcaoGenero">
       <option value="M"> Masculino </option>
       <option value="F"> Feminino </option>
     </select>
     <p></p>
-    <button class="enviar" type="submit" onclick="location.href='taxa.html';"> Próximo </button>
-    <h5 class="cred"> Desenvolvido por <span class="bruno">Bruno Rogerio</span> e<br> <span class="julia">Julia Stefanoni</span></h3>
+    <button class="enviar" onclick="sumirGenero()" id="p1"> Próximo </button>   
+    </div> <!-- FIM DO GENERO -->
+
+    <div class="taxa"> <!-- DIV DA TAXA-->
+      <h5 class="sele"> Taxa de atividade: </h5>
+    <select class="option" id="atividade">
+      <option value="1.2"> Sedentário </option>
+      <option value="1.375"> Levemente ativo </option>
+      <option value="1.55"> Moderadamente ativo </option>
+      <option value="1.725"> Altamente ativo </option>
+      <option value="1.9"> Extremamente ativo </option>
+    </select>
+    <p></p>
+     <button class="enviar" onclick="sumirTaxa()" id="p1"> Próximo </button>   
+    </div> <!-- FIM DA TAXA -->
+
+    <div class="info"> <!-- DIV DA INFO-->
+      <h5 class="sele"> informe seus dados: </h5>
+    <label class="dados"> Informe sua idade: </label>
+    <br>
+    <input class="textos" type="text" value="" placeholder="28" id="idade">
+    <br>
+    <label class="dados"> Informe seu peso: </label>
+    <br>
+    <input class="textos" type="text" value="" placeholder="72" id="peso">
+    <br>
+    <label class="dados"> Informe sua altura: </label>
+    <br>
+    <input class="textos" type="text" value="" placeholder="1.78" id="altura">
+    <p></p>
+    <button class="enviar" type="submit" onclick="location.href='result.html';" id="p3"> Próximo </button>
+    </div> <!-- FIM DA INFO -->
+
+    <div class="resultado">
+      <h1 id="resultadoCalc"> teste </h1>
+    </div>
+
   </div>
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/jquery-3.4.1.min.js"> </script>
+  <script src="components/acao.js"> </script>
 </body>
 </html>

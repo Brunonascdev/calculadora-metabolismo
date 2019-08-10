@@ -1,3 +1,7 @@
+*:focus {
+outline: 0;
+}
+
 body{
   background: #ee9ca7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -41,7 +45,7 @@ body{
 .cred{
   margin-top: 50%;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courgette', cursive;
   font-size: 18px;
 }
 
@@ -57,6 +61,12 @@ body{
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: white;
+}
+
+.enviar:active{
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bruno{

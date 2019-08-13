@@ -31,11 +31,29 @@ function sumirInfo(){
 	altura = $("#altura").val();
   if (gen == "M")
   {
-    var result = ativ * (66 + (13,7 * pes) + (5 * altura) - (6,8 * age));
+    var pesoConta;
+    var alturaConta;
+    var idadeConta;
+
+    pesoConta = 13.7 * pes;
+    alturaConta = 5 * altura;
+    idadeConta = 6.8 * age;
+
+    var result = ativ * (66 + (pesoConta + alturaConta - idadeConta));
+
   }
   else if (gen == "F")
   {
-    var result = ativ * (665 + (9,6 * pes) + (1,8 * altura) - (4,7 * age));
+    var pesoConta;
+    var alturaConta;
+    var idadeConta;
+
+    pesoConta = 9.6 * pes;
+    alturaConta = 1.8 * altura;
+    idadeConta = 4.7 * age;
+
+    var result = ativ * (665 + (pesoConta + alturaConta - idadeConta));
+
   }
   
   $("#resultadoCalc").html(result.toFixed(2).replace('.',','));
